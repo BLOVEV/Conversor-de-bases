@@ -41,6 +41,14 @@ Este projeto foi desenvolvido como atividade de estudo para praticar lógica de 
 
 ---
 
+Link para utilização
+
+Você pode acessar o projeto pelo Github Pages:
+
+https://blovev.github.io/Conversor-de-bases/
+
+---
+
 Autora
 
 Beatriz Vallada 
