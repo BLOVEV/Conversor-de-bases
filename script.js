@@ -33,7 +33,7 @@ numero.addEventListener("input", () => {
 
     numero.value = numero.value.toUpperCase().replace(/\s/g, "");
 
-    contadorCaracteres.textContent = numero.value.length + " / 10000";
+    contadorCaracteres.textContent = numero.value.length;
 });
 
 
@@ -56,7 +56,7 @@ document.getElementById("btnReset").addEventListener("click", () => {
     numero.value = "";
     resultadoFinal.textContent = "";
     conteudoPassos.innerHTML = "";
-    contadorCaracteres.textContent = "0 / 10000";
+    contadorCaracteres.textContent = "/100";
 });
 
 
