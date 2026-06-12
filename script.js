@@ -75,7 +75,7 @@ document.getElementById("btnVoltar").addEventListener("click", () => {
 // ====================
 function valorDoDigito(caractere) {
 
-    return "0123456789ABCDEF"
+    return "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         .indexOf(caractere);
 }
 
@@ -89,6 +89,7 @@ function validarEntrada(numero, base) {
     else if (base == 8) permitidos = "01234567";
     else if (base == 10) permitidos = "0123456789";
     else if (base == 16) permitidos = "0123456789ABCDEF";
+    else if (base == 36) permitidos = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     else
         return false;
