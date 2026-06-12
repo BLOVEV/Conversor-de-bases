@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Bases</title>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1> CONVERSOR DE <span>BASES</span></h1>
+    <p>FATEC - Faculdade de Tecnologia de Ribeirão Preto | SP</p>
+</header>
+
+<main>
+
+    <!-- ===================== -->
+    <!-- TELA 1: CONVERSOR -->
+    <!-- ===================== -->
+    <section id="telaConversor">
+
+        <div id="menu">
+            <button id="btnMenu">⋮</button>
+
+            <div id="menuOpcoes" class="hidden">
+                <button id="btnHistorico">Histórico</button>
+                <button id="btnReset">Encerrar</button>
+            </div>
+            <div id="listaHistorico" class="hidden"></div>
+        </div>
+
+        <h2 id="tituloConversao">CONVERTER NÚMERO</h2>
+
+        <div class="campos">
+
+            <div class="campo">
+                <label>BASE ATUAL</label>
+
+                <select id="baseOrigem">
+                    <option value="2">Binário</option>
+                    <option value="5">Quinária</option>
+                    <option value="8">Octal</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+
+                <p class="descricao">
+                    Base em que o número está atualmente.
+                </p>
+            </div>
+
+            <div class="campo">
+                <label>NÚMERO</label>
+
+                <textarea
+                    id="numero"
+                    class="campoDestaque"
+                    placeholder="Digite o número"></textarea>
+
+                <p id="contadorCaracteres">
+                    0 / 10000  </p>
+            </div>
+
+            <div class="campo">
+                <label>CONVERTER PARA</label>
+
+                <select id="baseDestino">
+                    <option value="2">Binário</option>
+                    <option value="5">Quinária</option>
+                    <option value="8">Octal</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+
+                <p class="descricao">
+                    Base para a qual deseja converter.
+                </p>
+            </div>
+
+        </div>
+
+        <button id="btnConverter">
+            CONVERTER
+        </button>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- TELA 2: RESULTADO -->
+    <!-- ===================== -->
+    <section id="telaResultado" class="hidden">
+
+        <button id="btnVoltar">← Voltar</button>
+
+        <div id="areaPassos">
+
+            <h2>PASSO A PASSO DA CONVERSÃO</h2>
+
+            <div id="conteudoPassos"></div>
+
+        </div>
+
+        <div id="areaResultado">
+
+            <h2>RESULTADO</h2>
+
+            <p id="resultadoFinal"></p>
+
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>By Beatriz Vallada</p>
+
+     <a href="https://github.com/BLOVEV"target="_blank">
+        github.com/BLOVEV
+     </a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
