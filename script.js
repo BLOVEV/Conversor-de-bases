@@ -166,7 +166,7 @@ function converterDeDecimal(decimal, baseDestino) {
     while (decimal > 0n) {
 
         const resto = decimal % baseBigInt;
-        const simbolo = "0123456789ABCDEF" [Number(resto)];
+        const simbolo = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ" [Number(resto)];
 
       passos +=
     decimal +
